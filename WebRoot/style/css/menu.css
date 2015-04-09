@@ -1,0 +1,98 @@
+.tableBNew,.tableBNew td,.tableBNew th {
+	border: none;
+	font-size: 12px;
+}
+
+.tableBNew th {
+	background: #96d6ff;
+	border-bottom: #00a6ff solid 1px;
+}
+
+.tableBNew td {
+	
+}
+
+.tableBNew .navA {
+	background: #c6e6ff;
+	border-bottom: #8ad3fa solid 1px;
+}
+
+.tableBNew .navB {
+	background: #e2f5ff;
+	border-bottom: #8ad3fa solid 1px;
+}
+
+.tableBNew .navBor {
+	border-left: #8ad3fa solid 1px;
+}
+
+.menuNav {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+}
+
+.menuNav a {
+	float: left;
+	padding: 0px 15px;
+	margin: 0px 5px 0px 0px;
+	text-decoration: none;
+}
+
+.menuNav a.MNOn:link,.menuNav a.MNOn:visited {
+	color: #000;
+	background: #96d6ff;
+}
+
+.menuNav a.MNOn:hover {
+	color: #000;
+}
+
+.menuNav a.MNOff:link,.menuNav a.MNOff:visited {
+	color: #fff;
+	background: #00a6ff;
+}
+
+.menuNav a.MNOff:hover {
+	color: #000;
+}
+
+
+a.pic1:link {
+	color: #ff0000;
+}
+
+a.pic1:visited {
+	color: #0000ff;
+}
+
+a.pic1:hover {
+	color: #ffcc00;
+}
+
+#graphbox{
+border:1px solid #e7e7e7;
+padding:10px;
+width:250px;
+background-color:#f8f8f8;
+margin:5px 0;
+}
+.graph{
+position:relative;
+background-color:#F0EFEF;
+border:1px solid #cccccc;
+padding:2px;
+font-size:13px;
+font-weight:700;
+}
+.graph .orange{
+position:relative;
+text-align:left;
+color:#ffffff;
+height:18px;
+line-height:18px;
+font-family:Arial;
+display:block;
+}
+.graph .orange{background-color:#ff6600;}

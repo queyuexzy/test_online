@@ -1,0 +1,211 @@
+﻿/*body原来属性 PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px*/
+BODY {
+	FONT-FAMILY: ms shell dlg; FONT-SIZE: 12px;
+}
+td{font-size:9pt}
+/*主界面调用CSS */
+.firstalt {
+	BACKGROUND: #ffffff
+}
+.secondalt {
+	BACKGROUND: #f4f4f4
+}
+.headerText {
+	FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; COLOR: #3b6597
+}
+.timecolor {
+	COLOR: #42517a
+}
+.smallfont {
+	FONT-SIZE: 10px; FONT-FAMILY: Verdana, sans-serif
+}
+.smallfonttablehead {
+	FONT-SIZE: 10px; COLOR: #447892; FONT-FAMILY: Verdana, sans-serif; TEXT-DECORATION: none
+}
+.normalfont {
+	FONT-SIZE: 12px; FONT-FAMILY: Verdana, sans-serif
+}
+.normalfonttablehead {
+	FONT-SIZE: 12px; COLOR: #447892; FONT-FAMILY: Verdana, sans-serif; TEXT-DECORATION: none
+}
+.important {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: red; FONT-FAMILY: Verdana, sans-serif
+}
+SELECT {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; BACKGROUND: #e1e4e5; COLOR: #000000; FONT-FAMILY: Verdana, sans-serif
+}
+TEXTAREA {
+	BORDER-TOP-WIDTH: 1px; FONT-WEIGHT: normal; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BACKGROUND: #e1e4e5; BORDER-BOTTOM-WIDTH: 1px; COLOR: #000000; FONT-FAMILY: Verdana, sans-serif; BORDER-RIGHT-WIDTH: 1px
+}
+.bginput {
+	BORDER-TOP-WIDTH: 1px; FONT-WEIGHT: normal; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BACKGROUND: #e1e4e5; BORDER-BOTTOM-WIDTH: 1px; COLOR: #000000; FONT-FAMILY: Verdana, sans-serif; BORDER-RIGHT-WIDTH: 1px
+}
+.normalInactive {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 12px; BACKGROUND: #ffffff; BORDER-LEFT: #ffffff 1px solid; COLOR: #000000; BORDER-BOTTOM: #ffffff 1px solid; FONT-FAMILY: Verdana, sans-serif
+}
+.highInactive {
+	BORDER-RIGHT: #f4f4f4 1px solid; BORDER-TOP: #f4f4f4 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 12px; BACKGROUND: #f4f4f4; BORDER-LEFT: #f4f4f4 1px solid; COLOR: #000000; BORDER-BOTTOM: #f4f4f4 1px solid; FONT-FAMILY: Verdana, sans-serif
+}
+A:link {
+	COLOR: #000020
+}
+A:visited {
+	COLOR: #000020
+}
+A:active {
+	COLOR: #000020
+}
+A:hover {
+	COLOR: #999999
+}
+.headerLink {
+	FONT-SIZE: 12px; COLOR: #daebfa; FONT-FAMILY: Verdana, sans-serif; TEXT-DECORATION: none
+}
+.footerLink {
+	FONT-SIZE: 11px; MARGIN-LEFT: 1%; COLOR: #142f8a; MARGIN-RIGHT: 1%; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.folderLink {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana, sans-serif; TEXT-DECORATION: none
+}
+.normalTable {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; FONT: 11px Verdana, sans-serif; BORDER-RIGHT-WIDTH: 0px
+}
+.normalRow {
+	BACKGROUND-COLOR: #ffffff
+}
+.highRow {
+	BACKGROUND-COLOR: #f4f4f4
+}
+.headerRow {
+	BACKGROUND: url(/images/tableheadbg.gif) #e9f3f8; HEIGHT: 23px
+}
+.normalCell {
+	BORDER-RIGHT: #C9C9C9 0px solid; BORDER-TOP: #C9C9C9 0px solid; BORDER-LEFT: #C9C9C9 0px solid; BORDER-BOTTOM: #C9C9C9 1px solid
+}
+.normalLeftCell {
+	BORDER-RIGHT: #C9C9C9 0px solid; BORDER-TOP: #C9C9C9 0px solid; BORDER-LEFT: #C9C9C9 1px solid; BORDER-BOTTOM: #C9C9C9 1px solid
+}
+.normalRightCell {
+	BORDER-RIGHT: #C9C9C9 1px solid; BORDER-TOP: #C9C9C9 0px solid; BORDER-LEFT: #C9C9C9 0px solid; BORDER-BOTTOM: #C9C9C9 1px solid
+}
+.normalBothCell {
+	BORDER-RIGHT: #C9C9C9 1px solid; BORDER-TOP: #C9C9C9 0px solid; BORDER-LEFT: #C9C9C9 1px solid; BORDER-BOTTOM: #C9C9C9 1px solid
+}
+.highCell {
+	BORDER-RIGHT: #C9C9C9 0px solid; BORDER-TOP: #C9C9C9 0px solid; BORDER-LEFT: #C9C9C9 0px solid; BORDER-BOTTOM: #C9C9C9 1px solid; BACKGROUND-COLOR: #E4F1FB
+}
+.highLeftCell {
+	BORDER-RIGHT: #C9C9C9 0px solid; BORDER-TOP: #C9C9C9 0px solid; BORDER-LEFT: #C9C9C9 1px solid; BORDER-BOTTOM: #C9C9C9 1px solid; BACKGROUND-COLOR: #E4F1FB
+}
+.highRightCell {
+	BORDER-RIGHT: #C9C9C9 1px solid; BORDER-TOP: #C9C9C9 0px solid; BORDER-LEFT: #C9C9C9 0px solid; BORDER-BOTTOM: #C9C9C9 1px solid; BACKGROUND-COLOR: #E4F1FB
+}
+.highBothCell {
+	BORDER-RIGHT: #C9C9C9 1px solid; BORDER-TOP: #C9C9C9 0px solid; BORDER-LEFT: #C9C9C9 1px solid; BORDER-BOTTOM: #C9C9C9 1px solid; BACKGROUND-COLOR: #E4F1FB
+}
+.headerCell {
+	BORDER-RIGHT: #80b4db 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #80b4db 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #80b4db 0px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #80b4db 1px solid
+}
+.xyLeftCell {
+	BORDER-RIGHT: #e1e1e1 0px solid; BORDER-TOP: #e1e1e1 1px solid; BORDER-LEFT: #e1e1e1 1px solid; BORDER-BOTTOM: #e1e1e1 1px solid;
+}
+.xyBothCell {
+	BORDER-RIGHT: #e1e1e1 1px solid; BORDER-TOP: #e1e1e1 1px solid; BORDER-LEFT: #e1e1e1 1px solid; BORDER-BOTTOM: #e1e1e1 1px solid;
+}
+TH A {
+	TEXT-DECORATION: none
+}
+.headerLeftCell {
+	BORDER-RIGHT: #80b4db 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #80b4db 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #80b4db 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #80b4db 1px solid
+}
+.headerRightCell {
+	BORDER-RIGHT: #80b4db 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #80b4db 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #80b4db 0px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #80b4db 1px solid
+}
+.headerBothCell {
+	BORDER-RIGHT: #80b4db 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #80b4db 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #80b4db 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #80b4db 1px solid
+}
+.headerNoneCell {
+	BORDER-RIGHT: #80b4db 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #80b4db 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #80b4db 0px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #80b4db 1px solid
+}
+.columnHeaderRow {
+	BACKGROUND-COLOR: #757575
+}
+.columnNornalRow {
+	BACKGROUND-COLOR: #FFFFFF
+}
+.columnHighRow {
+	BACKGROUND-COLOR: #ECE9D8
+}
+.columnHeaderLeftCell{
+	BORDER-RIGHT: #000000 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 0px; BORDER-LEFT: #000000 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #000000 1px solid;color: #FFFFFF
+}
+.columnHeaderBothCell{
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 0px; BORDER-LEFT: #000000 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #000000 1px solid;color: #FFFFFF
+}
+.columnLeftCell{
+	BORDER-RIGHT: #000000 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #000000 0px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 0px; BORDER-LEFT: #000000 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #000000 1px solid;color: #000000
+}
+.columnBothCell{
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #000000 0px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 0px; BORDER-LEFT: #000000 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #000000 1px solid;color: #000000
+}
+/*阴影文字 class="coolButton"*/
+.coolButton,
+.coolButtonHover,
+.coolButtonActiveHover,
+.coolButtonActive,
+.coolButtonActiveDisabled,
+.coolButtonDisabled,
+.coolButtonUpDisabled {
+	FILTER: DropShadow(Color=#000000, OffX=1, OffY=1, Positive=1); COLOR: #222222;
+	cursor: 			hand;
+	font-size: 		12px;
+	font-weight: 		normal;
+	padding:			2px 5px 2px 5px;
+	border:			0px solid ButtonFace;
+	white-space:		nowrap;
+	vertical-align:		middle;
+	
+/*左菜单调用 CSS*/
+}
+DIV {
+	FONT-FAMILY: ms shell dlg; FONT-SIZE: 12px
+}
+FONT {
+	FONT-FAMILY: ms shell dlg; FONT-SIZE: 12px
+}
+.off {
+	DISPLAY: inline
+}
+.on {
+	DISPLAY: none
+}
+.menus {
+	BACKGROUND-COLOR: #d9d9d9; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: white 1px solid; BORDER-RIGHT: black 1px solid; BORDER-TOP: white 1px solid; CURSOR: hand; FONT-SIZE: 9pt; MARGIN: 0px; OVERFLOW: hidden; PADDING-BOTTOM: 1px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; PADDING-TOP: 1px; TEXT-ALIGN: left; WIDTH: 90px
+}
+#menutool {
+	LEFT: 6px; POSITION: absolute; WIDTH: 90px; Z-INDEX: 10
+}
+A {
+	COLOR: black; FONT-SIZE: 9pt; TEXT-DECORATION: none; TEXT-TRANSFORM: none
+}
+A:hover {
+	COLOR: red; TEXT-DECORATION: none
+}
+A:visited {
+	
+}
+.tab_border {
+	BORDER-BOTTOM: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid
+}
+#NS {left:0; z-index: 1}
+#headerInfo {position: absolute; visibility: hidden; left: 163px; top: 100px; z-index: 2}
+b.special { font-style: normal; font-size: 10pt; font-weight: bold; font-family: Arial,Helvetica; color: #FF9900; text-decoration: none;}
+/*带图片输出 */
+.cabinput {
+	BORDER-RIGHT: #666666 1px ridge; BORDER-TOP: #999999 1px ridge; FONT-SIZE: 12px;  #ffffff; BORDER-LEFT: #999999 1px ridge; CURSOR: hand; COLOR: #006699; BORDER-BOTTOM: #666666 1px ridge; FONT-FAMILY: "verdana", "tahoma", "ms shell dlg", "sans-serif", "����"; HEIGHT: 20px
+}
+/*rl 2003 10 08 */
+.uTitleTD { font-family: "宋体"; font-size: 9pt; color: #000000; background-color: #6699cc; text-align: center; vertical-align: middle ; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px}
+.uContentWhiteCenterTD { font-family: "宋体"; font-size: 9pt; color: #000000; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px ; text-align: center; vertical-align: middle ; background-color: #FFFFFF}
+/*chang 2003 12 29 */
+#xchang {position: absolute;z-index:10;visibility:hidden;top:200;left:140;width:400;height:63;}

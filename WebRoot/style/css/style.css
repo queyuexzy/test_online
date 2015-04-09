@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* All-Base */
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {padding:0;font:normal 12px tahoma,sans-serif; color:#000; width:100%; background:#b3d0db; }
+* {padding:0;margin:0;font-style:normal;}
+img,a img {border:0;}
+.clear {clear:both;height:0;overflow:hidden;float:none;}
+select,input {font-size:12px;}
+ul,ol,dl,li,dd,dt {list-style:none;}
+a:link,a:visited{ color:#261CDC; text-decoration:none;} 
+a:hover { color:#261CDC; text-decoration:underline; }
+
+/* gloabl */
+.fL{ float:left; }
+.fR{ float:right; }
+.w100B{ width:100%; }
+.m0I{ margin:0px!important; }
+.w250{ width:250px; }
+
+.w150{ width:150px; }
+.w80{ width:80px; }
+.w20{ width:20px; text-align: center;}
+.mT20{ margin-top:20px; }
+.w350{ width:350px; }
+.h200{ height:200px; }
+
+
+/* index */
+.bodyIndex { 
+	 background: -moz-radial-gradient(circle, #eee, #000); 
+ 	/* Safari 4-5, Chrome 1-9 */ 
+ 	/* Safari 5.1+, Chrome 10+ */ 
+ 	background: -webkit-radial-gradient(circle, #eee, #000);
+ }
+.login{ margin:0px auto 0px auto; width:800px; height:322px; padding:170px 120px 0px 120px; }
+.login-header {
+	height: 90px;
+	width: 800px;
+	margin-bottom: 50px; 
+}
+.login-logo {
+	width: 200px;
+	height: 90px;
+	background: url(../images/logo.png) no-repeat center center;
+	float: left;
+	margin-right: 50px;
+}
+.login-title {
+	font-size: 60px;
+	font-family: "Microsoft YaHei";
+	color: #0066ff;
+	float: left;
+}
+.login table{ width:100%; }
+.login table th, .login table td{ padding:5px; vertical-align:middle; }
+.login table th{ text-align:right; font-weight:normal; width:37%; font-size: 12px; }
+.login table td input, .login table td img{ border:none; vertical-align:middle; }
+.login table td input.w80, .login table td input.w150{ height:14px; padding:2px; }
+.login table td input.loginButton{ height:22px; line-height:19px; padding:0px 15px; background:url(../images/bg/bgButton.jpg) repeat-x 0px 0px; color:#fff; font-weight:bold; border:#779ccb solid 1px; }
+.login table td a:link, .login table td a:visited{ color:#000; text-decoration:none;} 
+.login table td a:hover { color:#000; text-decoration:underline; }
+
+.loginFoot{ margin-top:30px; padding-top:28px; text-align:center; }
+.loginFoot label{ display:block; color:#355c8e; padding-bottom:8px; }
+
+
+
+/* head */
+.head{ float:left; width:100%; background:#6ca2b6 url(../images/bg/bgHead.jpg) 0px 0px; }
+.logo{ height:80px; float:left; }
+.nav{ height:30px; line-height:30px; padding:50px 0px 0px 0px; float:left; font-size:14px; font-weight:bold; }
+.nav a{ padding:0px 15px;}
+.nav a:link, .nav a:visited{ color:#000; text-decoration:none;} 
+.nav a:hover { color:#000; text-decoration:underline; }
+.nav a.Over:link, .nav a.Over:visited{ color:#31689e; text-decoration:underline;} 
+.nav a.Over:hover { color:#31689e; text-decoration:underline; }
+
+
+
+/* left */
+.left{ width:207px; background:url(../images/bg/bgNavM.gif) repeat-y; }
+.head td label{ display:block; text-align:right; margin:10px 10px 0px 0px; }
+
+.tableA, .tableB{ border:#a3aaac solid 1px; border-bottom:none; }
+.tableC{ border-left:#a3aaac solid 1px; border-top:#a3aaac solid 1px; }
+.tableA{ color:#07445d; }
+
+.tableA td, .tableA th, .tableB td, .tableB th{ border-bottom:#a3aaac solid 1px; }
+.tableC th, .tableC td{ border-right:#a3aaac solid 1px; border-bottom:#a3aaac solid 1px; }
+
+.tableA td{ padding:5px; background:#c2dde6; }
+.tableA th{ background:url(../images/bg/bgTableTh.gif) repeat-x; height:26px; line-height:26px; }
+.tableA tr.bgTableA td{ background:#b3d0db; }
+
+.tableB th, .tableC th{ background:#d0e6ef; height:26px; line-height:26px; color:#07445d; }
+.tableB td, .tableC td{ padding:5px; background:#e5f3fb; }
+.tableB td strong{color:#07445d; }
+.tableB td input.w250, .tableB td textarea.w250, .tableB td select.w250{ border:#b2c9d3 solid 1px; }
+.tableB td textarea.w250{ height:150px; }
+.tableB td input.inputB{ height:25px; line-height:25px; padding:0px 10px; background: url(../images/bg/bgButtonA.gif) repeat-x; border:#a7bcd1 solid 1px; margin:0px 5px; }
+.inputB{ height:22px; line-height:22px; padding:0px 10px; background: url(../images/bg/bgButtonA.gif) repeat-x; border:#a7bcd1 solid 1px; margin:0px 5px; }
+
+.treeDiv {overflow: scroll;background:none repeat scroll 0 0 #E5F3FB;border: 1px solid #A3AAAC;}
+
+/* page */
+.page{ height:30px; line-height:30px; text-align:right; padding:10px 50px 10px 0px; }
+.page strong{ padding:2px 5px; background:#FFF; }
+.page a{ margin:0px 5px; padding:2px 5px; text-decoration:none; }
+.page a:link, .page a:visited{ color:#FFFFFF; background:#57a3d9; }
+.page a:hover{ color:#57a3d9; background:#fff; }
+
+
+/* pop 10-10-21*/
+.pop{ background:#ebf8ff; border:#fff solid 1px; margin:10px;}
+
+.popTop{ width:100%; float:left; height:29px; background:#c4deec; }
+.popTop label{ font-size:14px; float:left; width:85%; height:29px; line-height:29px; padding-left:10px; font-weight:bold; }
+.popTop em{ float:right; background:url(../images/ico/icoClosedNews.gif) no-repeat 0px 0px; width:13px; height:13px; margin:7px 10px 0px 0px; cursor:pointer; }
+.popCon{ width:94%; padding:20px 3% 0px 3%; float:left;}
+.password p{ padding:5px 0px; }
+.password p label{ width:100px; float:left; text-align:right; }
+.password p input{ height:14px; padding:2px; border:#b2b2b2 solid 1px; width:150px; }
+
+.popButtonCon{ padding:10px 0px 0px 100px; }
+.popButtonCon input{ height:19px; line-height:19px; padding:0px 10px; background: url(../images/bg/bgButtonA.gif) repeat-x; border:#a7bcd1 solid 1px; margin:0px 5px 0px 0px; }
+
+
+/* 1010-10-21 */
+.tableBNew, .tableBNew td, .tableBNew th{ border:none; font-size:12px; }
+.tableBNew th{ background:#96d6ff; border-bottom:#00a6ff solid 1px; }
+.tableBNew td{  }
+.tableBNew .navA{ background:#c6e6ff; border-bottom:#8ad3fa solid 1px; }
+.tableBNew .navB{ background:#e2f5ff; border-bottom:#8ad3fa solid 1px; }
+.tableBNew .navBor{ border-left:#8ad3fa solid 1px; }
+.menuNav{ width:100%; height:30px; line-height:30px; font-size:12px; }
+.menuNav a{ float:left; padding:0px 15px; margin:0px 5px 0px 0px; text-decoration:none; }
+.menuNav a.MNOn:link, .menuNav a.MNOn:visited{ color:#000; background:#96d6ff; }
+.menuNav a.MNOn:hover{ color:#000; }
+.menuNav a.MNOff:link, .menuNav a.MNOff:visited{ color:#fff; background:#00a6ff; }
+.menuNav a.MNOff:hover{ color:#000; }
+
+
+
+/* 10-10-26 */
+.tableTrMouse td{ background:#e0e0e0; }
+.tableTr td{ background:#fff; }
+
+/* 10-11-12 */
+.welcome{ margin:50px 0px 0px 0px; background: url(../images/logo/logo4.jpg) center top no-repeat; padding-top:120px; font-size:40px; text-align:center; font-family:"微软雅黑"; color:#006389; }
+/*popup*/
+.popup_title{ height:26px;width:100%;line-height:26px;background:url(../images/bg/bgTableTh.gif) repeat-x;border-bottom:1px solid #d9e6f0;text-align: center; }
+
+.divPopup{ z-index: 1000; position: absolute; display: none; background: #FFFFFF; border: 1px solid #cccccc; text-align: center;}
+.divPopupClose{ z-index:1001;position:absolute;right:0px;top:3px; }

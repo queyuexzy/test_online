@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="testOnline" namespace="/testOnline" extends="mydefault">
+		<action name="testOnline_*" class="com.test_online.action.Test" method="{1}">
+			<result name="toStudent">/WEB-INF/student/studentToIndex.jsp</result>
+			<result name="toTeacher">/WEB-INF/student/teacherToIndex.jsp</result>
+			<result name="toAdmin">/WEB-INF/student/adminToIndex.jsp</result>
+		</action>
+	</package>
+	<package name="login" namespace="/login" extends="mydefault">
+		<action name="login_*" class="com.test_online.action.LoginAction" method="{1}">
+			<result name="toStudent">/WEB-INF/student/studentToIndex.jsp</result>
+			<result name="toTeacher">/WEB-INF/student/teacherToIndex.jsp</result>
+			<result name="toAdmin">/WEB-INF/student/adminToIndex.jsp</result>
+		</action>
+	</package>
+</struts>

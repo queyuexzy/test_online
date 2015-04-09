@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+	
+	<bean id="dataSources" class="org.apache.commons.dbcp.BasicDataSource" scope="prototype" destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/test_online"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="123456"></property>
+	</bean>	
+	
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSources"/>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>com/test_online/module/UserInfo.hbm.xml</value> 
+				<value>com/test_online/module/SimpleAnswerInfo.hbm.xml</value> 
+				<value>com/test_online/module/SimpleInfo.hbm.xml</value> 
+				<value>com/test_online/module/PaperInfo.hbm.xml</value> 
+				<value>com/test_online/module/JudgeInfo.hbm.xml</value> 
+				<value>com/test_online/module/JudgeAnswerInfo.hbm.xml</value> 
+				<value>com/test_online/module/ChooseInfo.hbm.xml</value> 
+				<value>com/test_online/module/ChooseAnswerInfo.hbm.xml</value> 
+				<value>com/test_online/module/BlankInfo.hbm.xml</value> 
+				<value>com/test_online/module/BlankAnswerInfo.hbm.xml</value> 
+				<value>com/test_online/module/BankInfo.hbm.xml</value> 
+				<value>com/test_online/module/UserPaperRelation.hbm.xml</value> 
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.Oracle9Dialect
+				</prop>
+				<prop key="hibernate.show_sql">
+     				true
+    			</prop>
+			</props>
+		</property>
+	</bean>
+	<!-- 
+	<bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		 <property name="sessionFactory" ref="sessionFactory" /> 
+	</bean>
+	<tx:annotation-driven transaction-manager="transactionManager" /> -->
+	<context:component-scan base-package="com" />
+	
+	<!-- 
+	<aop:config>
+		<aop:aspect ref="baseDao">
+			<aop:before
+				pointcut="execution(* com.test_online.dao.BankDao.save(..))"
+				method="openSession" />
+			<aop:before
+				pointcut="execution(* com.test_online.dao.BankDao.save(..))"
+				method="beginTransaction" />
+			<aop:after
+				pointcut="execution(* com.test_online.dao.BankDao.save(..))"
+				method="commit" />
+			<aop:after
+				pointcut="execution(* com.test_online.dao.BankDao.save(..))"
+				method="close" />
+				
+			
+		</aop:aspect>
+	</aop:config>
+	 -->
+</beans>

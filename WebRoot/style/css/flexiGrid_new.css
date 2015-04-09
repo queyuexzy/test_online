@@ -1,0 +1,11 @@
+th{
+	font-size:12px;
+}
+td{
+	font-size:12px;
+}
+/* a标签属性
+----------------------------------*/
+a {font-size:12px; cursor: pointer;} 
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #2e6e9e; text-decoration: underline; }
+.ui-state-hover a, .ui-state-hover a:hover { color: purple; text-decoration: none; font-size: 13px; }
