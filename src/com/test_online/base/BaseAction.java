@@ -25,10 +25,15 @@ import com.test_online.util.JackJson;
 
 /**
  * 最基本action 其他aciton 需时他的子类
+<<<<<<< HEAD
+ * @author zhangying
+ * @date   2015年4月9日 下午3:06:51
+=======
  * 
  * @author zhl
  * @date 20112011-8-24下午02:30:06
  * 
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
  */
 public abstract class BaseAction extends ActionSupport implements
 		ServletResponseAware {
@@ -87,18 +92,34 @@ public abstract class BaseAction extends ActionSupport implements
 
 	/**
 	 * 放入context数据
+<<<<<<< HEAD
+	 * @Title: putToContext
+	 * @data:2015年4月9日下午3:07:05
+	 * @author:zhangying
+	 * @param key
+	 * @param value void
+=======
 	 * 
 	 * @author zhl
 	 * @date 20112011-8-24下午02:20:42
 	 * 
 	 * @param key
 	 * @param value
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	 */
 	protected void putToContext(String key, Object value) {
 		ActionContext.getContext().put(key, value);
 	}
 
 	/**
+<<<<<<< HEAD
+	 *  从context中取数据
+	 * @Title: getFromContext
+	 * @data:2015年4月9日下午3:07:13
+	 * @author:zhangying
+	 * @param key
+	 * @return Object
+=======
 	 * 从context中取数据
 	 * 
 	 * @author zhl
@@ -106,6 +127,7 @@ public abstract class BaseAction extends ActionSupport implements
 	 * 
 	 * @param key
 	 * @return
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	 */
 	protected Object getFromContext(String key) {
 		return ActionContext.getContext().get(key);
@@ -113,12 +135,20 @@ public abstract class BaseAction extends ActionSupport implements
 
 	/**
 	 * 放入session数据
+<<<<<<< HEAD
+	 * @Title: putToSession
+	 * @data:2015年4月9日下午3:07:21
+	 * @author:zhangying
+	 * @param key
+	 * @param value void
+=======
 	 * 
 	 * @author zhl
 	 * @date 20112011-8-24下午02:20:56
 	 * 
 	 * @param key
 	 * @param value
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	 */
 	protected void putToSession(String key, Object value) {
 		ServletActionContext.getRequest().getSession().setAttribute(key, value);
@@ -126,12 +156,20 @@ public abstract class BaseAction extends ActionSupport implements
 
 	/**
 	 * 从session中取数据
+<<<<<<< HEAD
+	 * @Title: getFromSession
+	 * @data:2015年4月9日下午3:07:30
+	 * @author:zhangying
+	 * @param key
+	 * @return Object
+=======
 	 * 
 	 * @author zhl
 	 * @date 20112011-8-24下午02:26:22
 	 * 
 	 * @param key
 	 * @return
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	 */
 	protected static Object getFromSession(String key) {
 		return ServletActionContext.getRequest().getSession().getAttribute(key);
@@ -139,9 +177,15 @@ public abstract class BaseAction extends ActionSupport implements
 
 	/**
 	 * Invalidate the session.
+<<<<<<< HEAD
+	 * @Title: invalidateSession
+	 * @data:2015年4月9日下午3:07:40
+	 * @author:zhangying void
+=======
 	 * 
 	 * @author Luo Yinzhuo
 	 * @date 2014年8月25日 下午2:37:57
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	 */
 	protected static void invalidateSession() {
 		ServletActionContext.getRequest().getSession().invalidate();
@@ -149,12 +193,20 @@ public abstract class BaseAction extends ActionSupport implements
 
 	/**
 	 * 从request Attribute中取数据
+<<<<<<< HEAD
+	 * @Title: getFromRequstAttribute
+	 * @data:2015年4月9日下午3:07:52
+	 * @author:zhangying
+	 * @param key
+	 * @return Object
+=======
 	 * 
 	 * @author zhl
 	 * @date 20112011-8-24下午04:00:17
 	 * 
 	 * @param key
 	 * @return
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	 */
 	protected Object getFromRequstAttribute(String key) {
 		return ServletActionContext.getRequest().getAttribute(key);
@@ -162,23 +214,40 @@ public abstract class BaseAction extends ActionSupport implements
 
 	/**
 	 * 从request Parameter中取数据
+<<<<<<< HEAD
+	 * @Title: getFromRequestParameter
+	 * @data:2015年4月9日下午3:08:05
+	 * @author:zhangying
+	 * @param key
+	 * @return String
+=======
 	 * 
 	 * @author zhl
 	 * @date 20112011-8-25下午09:33:11
 	 * 
 	 * @param key
 	 * @return
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	 */
 	protected String getFromRequestParameter(String key) {
 		return ServletActionContext.getRequest().getParameter(key);
 	}
 
 	/**
+<<<<<<< HEAD
+	 * downloadFile
+	 * @Title: downloadFile
+	 * @data:2015年4月9日下午3:08:17
+	 * @author:zhangying
+	 * @param filePath
+	 * @throws Exception void
+=======
 	 * 
 	 * @Title: downloadFile
 	 * @author zhaoxin1
 	 * @Description: 下载文件
 	 * @date 2014年9月25日 上午10:30:38
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	 */
 	protected void downloadFile(String filePath) throws Exception {
 		File f = new File(filePath);
@@ -211,8 +280,12 @@ public abstract class BaseAction extends ActionSupport implements
 	 * @return The request parameter.
 	 * @throws RequestParameterException
 	 *             If any error occurs.
+<<<<<<< HEAD
+	 * @author zhangying
+=======
 	 * @author Luo Yinzhuo
 	 * @date 2015年2月10日 下午3:06:56
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	 */
 	protected RequestParameter extractParameter(String[] keys)
 			throws RequestParameterException {
@@ -273,9 +346,14 @@ public abstract class BaseAction extends ActionSupport implements
 
 	/**
 	 * A wrapper class to wrap the parameter in the request.
+<<<<<<< HEAD
+	 * @author zhangying
+	 * @date   2015年4月9日 下午3:08:51
+=======
 	 * 
 	 * @author Luo Yinzhuo
 	 * @date 2015年2月10日 下午3:55:41
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	 */
 	public class RequestParameter {
 		/** The parameter map. */
@@ -289,7 +367,11 @@ public abstract class BaseAction extends ActionSupport implements
 		 * @return The parameter.
 		 * @throws RequestParameterException
 		 *             If the parameter doesn't exist.
+<<<<<<< HEAD
+		 * @author zhangying
+=======
 		 * @author Luo Yinzhuo
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 		 * @date 2015年2月10日 下午3:56:23
 		 */
 		public String get(String key) throws RequestParameterException {
@@ -311,7 +393,11 @@ public abstract class BaseAction extends ActionSupport implements
 		 *            The key.
 		 * @param value
 		 *            The parameter.
+<<<<<<< HEAD
+		 * @author zhangying
+=======
 		 * @author Luo Yinzhuo
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 		 * @date 2015年2月10日 下午3:57:11
 		 */
 		void put(String key, String value) {
@@ -322,7 +408,11 @@ public abstract class BaseAction extends ActionSupport implements
 	/**
 	 * The exception occurs during extraction request parameters.
 	 * 
+<<<<<<< HEAD
+	 * @author zhangying
+=======
 	 * @author Luo Yinzhuo
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	 * @date 2015年2月10日 下午3:30:59
 	 */
 	public static class RequestParameterException extends Exception {
@@ -339,7 +429,11 @@ public abstract class BaseAction extends ActionSupport implements
 	 * @param flexiGridQuery
 	 *            The flexiGrid query json.
 	 * @return True if valid, otherwise false.
+<<<<<<< HEAD
+	 * @author zhangying
+=======
 	 * @author Luo Yinzhuo
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	 * @date 2015年2月10日 下午3:00:25
 	 */
 	public boolean validateQuery_json(String flexiGridQuery) {

@@ -26,11 +26,27 @@ import com.test_online.util.JackJson;
  * @date   2015年3月17日
  */
 public class LoginAction extends BaseAction{
+<<<<<<< HEAD
+	/**the serial id to identify the class*/
+	private static final long serialVersionUID = -3088541514701721252L;
+	
+	/**the service to control the userDao*/
+	@Autowired
+	private UserService userService;
+	
+	/**
+	 * to konw the role of the user and to put the user into the session
+	 * @Title: login
+	 * @data:2015年4月9日下午2:11:06
+	 * @author:zhangying void
+	 */
+=======
 	private static final long serialVersionUID = -3088541514701721252L;
 	
 	@Autowired
 	private UserService userService;
 	
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	public void login(){
 		AjaxResponse ajaxResponse;
 		try {
@@ -54,6 +70,15 @@ public class LoginAction extends BaseAction{
 		}
 	}
 	
+<<<<<<< HEAD
+	/**
+	 * to register a user into the user_info
+	 * @Title: register
+	 * @data:2015年4月9日下午2:12:41
+	 * @author:zhangying void
+	 */
+=======
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	public void register(){
 		AjaxResponse ajaxResponse;
 		
@@ -78,6 +103,15 @@ public class LoginAction extends BaseAction{
 		}
 	}
 	
+<<<<<<< HEAD
+	/**
+	 * to know the id if exist when we are not focus on the textarea
+	 * @Title: idIfExist
+	 * @data:2015年4月9日下午2:13:09
+	 * @author:zhangying void
+	 */
+=======
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	public void idIfExist(){
 		AjaxResponse ajaxResponse;
 		
@@ -94,6 +128,16 @@ public class LoginAction extends BaseAction{
 		}
 	}
 	
+<<<<<<< HEAD
+	/**
+	 * remove all the attribute in session
+	 * @Title: logout
+	 * @data:2015年4月9日下午2:14:13
+	 * @author:zhangying
+	 * @return String
+	 */
+=======
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	public String logout(){
 		
 		ServletActionContext.getRequest().getSession().invalidate();
@@ -101,42 +145,152 @@ public class LoginAction extends BaseAction{
 		return LOGOUT;
 	}
 	
+<<<<<<< HEAD
+	/**
+	 * validate if the id is legal
+	 * @Title: validateId
+	 * @data:2015年4月9日下午2:14:43
+	 * @author:zhangying
+	 * @param id
+	 * @return boolean
+	 */
+=======
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	public boolean validateId(String id){
 		return id != null && id.length() > 0 && StringUtils.isNumeric(id);
 	}
 	
+<<<<<<< HEAD
+	/**
+	 * validate if the name is legal
+	 * @Title: validateName
+	 * @data:2015年4月9日下午2:14:58
+	 * @author:zhangying
+	 * @param name
+	 * @return boolean
+	 */
+=======
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	public boolean validateName(String name){
 		return true;
 	}
 	
+<<<<<<< HEAD
+	/**
+	 * validate if the password is legal
+	 * @Title: validatePassword
+	 * @data:2015年4月9日下午2:15:12
+	 * @author:zhangying
+	 * @param password
+	 * @return boolean
+	 */
+=======
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	public boolean validatePassword(String password){
 		return password != null && password.length() > 0 && StringUtils.isNumeric(password);
 	}
 	
+<<<<<<< HEAD
+	/**
+	 * validate if the teamStatus id legal
+	 * @Title: validateTeamStatus
+	 * @data:2015年4月9日下午2:15:25
+	 * @author:zhangying
+	 * @param teamStatus
+	 * @return boolean
+	 */
+=======
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	public boolean validateTeamStatus(String teamStatus){
 		return teamStatus != null && teamStatus.length() > 0 && StringUtils.isNumeric(teamStatus);
 	}
 	
+<<<<<<< HEAD
+	/**
+	 * validate if the age is legal
+	 * @Title: validateAge
+	 * @data:2015年4月9日下午2:15:49
+	 * @author:zhangying
+	 * @param age
+	 * @return boolean
+	 */
+=======
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	public boolean validateAge(String age){
 		return true;
 	}
 	
+<<<<<<< HEAD
+	/**
+	 * valite if the birthday is legal
+	 * @Title: validateBirthday
+	 * @data:2015年4月9日下午2:16:03
+	 * @author:zhangying
+	 * @param birthday
+	 * @return boolean
+	 */
+=======
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	public boolean validateBirthday(String birthday){
 		return true;
 	}
 	
+<<<<<<< HEAD
+	/**
+	 * validate if the address is legal
+	 * @Title: validateAddress
+	 * @data:2015年4月9日下午2:16:20
+	 * @author:zhangying
+	 * @param address
+	 * @return boolean
+	 */
+=======
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	public boolean validateAddress(String address){
 		return true;
 	}
 	
+<<<<<<< HEAD
+	/**
+	 * validate if the tel is legal
+	 * @Title: validateTel
+	 * @data:2015年4月9日下午2:16:33
+	 * @author:zhangying
+	 * @param tel
+	 * @return boolean
+	 */
+=======
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	public boolean validateTel(String tel){
 		return tel != null && tel.length() > 0 && StringUtils.isNumeric(tel);
 	}
 	
+<<<<<<< HEAD
+	/**
+	 * validate if the email is legal
+	 * @Title: validateEmail
+	 * @data:2015年4月9日下午2:16:50
+	 * @author:zhangying
+	 * @param email
+	 * @return boolean
+	 */
+=======
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	public boolean validateEmail(String email){
 		return email != null && email.length() > 0;
 	}
 	
+<<<<<<< HEAD
+	/**
+	 * validate if the remark is legal
+	 * @Title: validateRemark
+	 * @data:2015年4月9日下午2:17:04
+	 * @author:zhangying
+	 * @param remark
+	 * @return boolean
+	 */
+=======
+>>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
 	public boolean validateRemark(String remark){
 		return true;
 	}
