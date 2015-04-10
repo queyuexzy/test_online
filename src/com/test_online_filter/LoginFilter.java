@@ -37,17 +37,6 @@ public class LoginFilter extends BaseAction implements Interceptor {
 		logger.info("LoginFilter start");
 	}
 
-<<<<<<< HEAD
-	/*
-	 * 判断用户是否已经登录 如果session失效，需重新登录 若为ajax请求，session -5 失效时写回页面 值 -1 || null 为异常
-	 * (non-Javadoc)
-	 * @see com.opensymphony.xwork2.interceptor.Interceptor#intercept(com.opensymphony.xwork2.ActionInvocation)
-	 * @param arg0
-	 * @return
-	 * @throws Exception
-	 * @date: 2015年4月9日下午2:09:49
-	 * @author: zhangying
-=======
 	/**
 	 * 判断用户是否已经登录 如果session失效，需重新登录 若为ajax请求，session -5 失效时写回页面 值 -1 || null 为异常
 	 * 
@@ -57,7 +46,7 @@ public class LoginFilter extends BaseAction implements Interceptor {
 	 * @param arg0
 	 * @return
 	 * @throws Exception
->>>>>>> 374cef2ba616611f64614598117dc654ed31c2d8
+
 	 */
 	@Override
 	public String intercept(ActionInvocation arg0) throws Exception {
